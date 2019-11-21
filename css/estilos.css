@@ -1,0 +1,498 @@
+body{
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+}
+
+header .contenedor{
+    display: flex;
+    justify-content: space-between;
+}
+
+header ul{
+    display: flex;
+}
+
+header ul li {
+    list-style: none;
+    margin-right: 15px;
+}
+a {
+text-decoration: none;
+}
+
+.contenedor{
+    max-width: 1280px;
+    width: 90%;
+    margin: auto;
+}
+
+header{
+    background:
+    /*el rgba tiene la a al final para los tonos transparentes que se identificas con el .3*/
+    linear-gradient(rgba(84,93,220,.3),rgba(96,171,245,.3)),
+    url(../img/fondo.jpg);
+    height: 100vh;
+    background-size: cover;
+}
+
+#contenedor-titulo-flex{
+    display: flex;
+    justify-content: center;
+    margin: 18vh 0;
+    max-width: 1580px; 
+    width: 100%;
+}
+
+h1{
+    font-size: 60px;
+    color: #fff;
+    margin: 0; 
+    font-family:'Kaushan Script', cursive; 
+}
+
+h2{
+    font-size: 23px;
+    color: #fff;     
+}
+
+.contenedor-titulo{
+    text-align: center;
+}
+
+.contenedor-titulo a, #sobre-mi a, #blog a, #que-esperas a, #contacto input[type="submit"]{
+    font-size: 15px;
+    color: #fff;
+    background: #48adfa;
+    padding: 14px 24px;
+    width: 128px;
+    display: inline-block;
+    border-radius: 4px 4px 4px 4px;
+    box-shadow: 10px 10px 5px -5px rgba(0,0,0,0.75);
+}
+
+p.logo strong a{
+    color: #fff;
+    font-size: 20px;
+}
+
+nav ul li a{
+    color: #fff;
+    font-family:'Kaushan Script', cursive;
+    font-size: x-large;
+}
+
+.newcolor:hover{
+   color:#550055;
+  }
+
+/*SECCION SOBRE MI*/
+
+h3{
+    text-align: center;
+    font-size:55px;
+    font-weight: normal;
+    font-family:'Kaushan Script', cursive;
+}
+
+#sobre-mi .contenedor-sobremi{
+    display: flex;
+    justify-content: space-around;
+}
+
+#sobre-mi .texto{
+    width: 42%;
+}
+
+/*SECCION SERVICIOS*/
+
+.contenedor-servicios{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    color: #fff;
+}
+
+.servicio{
+    width: 24%;
+    padding: 34px 30px 38px 30px;
+    border-radius: 10px;
+    margin-bottom: 40px;
+    position: relative;
+}
+
+.servicio h4{
+    font-size: 30px;
+    margin: 0;
+}
+
+.servicio p{
+   margin-bottom: 20px;
+   height: 194px;
+
+}
+.contenedor-servicios .violeta {
+    background: linear-gradient(to top, #5055df, #6d68f3);
+    box-shadow: 0 12px 30px 0 rgba(80, 85, 223, .37);
+}
+.contenedor-servicios .celeste {
+    background: linear-gradient(to top, #40a8f9, #5cb8ff);
+    box-shadow: 0 12px 30px 0 rgba(86, 163, 222, .3);
+}
+.ondas {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+.icono {
+  float: right;
+}
+
+/*SECCION MIS TRABAJOS*/
+button.owl-prev, button.owl-next{
+    font-size: 40px !important;
+}
+
+span{
+    color: #71bcfa;
+}
+
+#mis-trabajos p{
+    text-align: center;
+    color: #000;
+}
+
+/* SECCION POR QUE TRABAJAR CONMIGO */
+
+.contenedor-trabajar {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  #por-que-trabajar .item {
+    width: 28%;
+    text-align: center;
+  }
+  
+  #por-que-trabajar ul li {
+    list-style: none;
+  }
+  
+  #por-que-trabajar ul li:nth-child(2) {
+    font-weight: bold;
+    font-size: 19px;
+    margin-top: 5px;
+    margin-bottom: 20px;
+  }
+  
+  #por-que-trabajar ul li:nth-child(3) {
+    line-height: 31px;
+  }
+ 
+  /* SECCION BLOG */
+
+#blog {
+    background: #F9FAFC;
+  }
+  
+  #blog .contenedor-publicaciones {
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  #blog .publicacion {
+    width: 30%;
+    box-shadow: 1px 1px 14px #ccc;
+  }
+  
+  #blog img {
+      width: 100%;
+      height: 35%;
+  }
+  
+  #blog .contenido {
+    background: #fff;
+    padding: 20px;
+  }
+  
+  #blog h4 {
+    font-size: 23px;
+    margin: 0;
+    margin-bottom: 15px;
+  }
+  
+  #blog p {
+    color: #5A6169;
+    line-height: 24px;
+    font-size: 16px;
+  }
+  
+  #blog a {
+    width: 87px;
+  }
+
+/* SECCION QUE ESPERAS */
+
+#que-esperas {
+    background: linear-gradient(rgba(84,93,220,.94), rgba(96,171,245,.9));
+    text-align: center;
+    padding: 50px 0;
+    margin-top: 40px;
+  }
+  
+  #que-esperas h3 {
+    font-size: 40px;
+    color: #fff;
+  }
+
+  /* SECCION CONTACTO */
+
+#contacto form {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 77%;
+    margin: auto;
+  }
+  
+  input[type="text"], input[type="email"] {
+    width: 49%;
+    margin-bottom: 15px;
+    padding: 18px 0;
+    border: 0;
+    border-bottom: 1px solid #5cb8ff;
+    font-size: 17px;
+  }
+  
+  textarea {
+    padding: 18px 0;
+    border: 0;
+    border-bottom: 1px solid #5cb8ff;
+    font-size: 17px;
+    margin-bottom: 40px;
+    width: 100%;
+  }
+  
+  #contacto input[type="submit"] {
+    width: 166px;
+    margin: auto;   
+    border: none;    
+  }
+
+  .contacto-info{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 60px;
+  }
+
+  .contacto-info img{
+    width: 28px;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+/*SECCION FOOTER*/
+  footer{
+    background: #2f2f2f;
+    padding: 40px 0;
+    text-align: center;
+    margin-top: 40px;
+  }
+
+  footer .contenedor{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  footer img{
+    margin: 0 40px;
+    transform: rotate(0);
+    transition: 0.4s;
+  }
+
+  footer img:hover{
+    transform: rotate(360deg);
+    transition: 0.4s;
+  }
+
+  footer p{
+    color: #fff;
+    margin-top: 40px;
+  }
+/*SECCION ICONO WHATSAPP*/
+  #whatsapp{
+    position: fixed;
+    top: 80%;
+    right: 1%;   
+  }
+ .imgwha{
+    width: 50px; 
+    height: 50px;
+  }
+  /*SECCION SCROLL MENU*/
+  html{
+    scroll-behavior: smooth;
+  }
+
+  #mis-trabajos,#por-que-trabajar,#blog,#contacto,#servicios{
+    padding: 40px 0;
+  }
+
+ /*SECCION RESPONSIVE PARA EL MENU*/
+ .menu-icon{
+   display: none;
+ }
+
+ @media (max-width:800px){
+  
+  .menu-icon{
+     display: block;
+     float: right;
+     width: 40px;
+     height: 35px;
+     margin-top: 15px;
+   }
+
+   header nav{
+     position: absolute;
+     top: 62px;
+     left: 0;
+     height: 310px;
+     background-color: rgba(40, 175, 196, 0.6); 
+     color: rgba(40, 175, 196, 0.6);
+     width: 100%;
+     display: none;
+     z-index:1;/*para posicionar un objeto despues del otro*/
+   }
+
+   header nav ul{
+     flex-direction: column;
+   }
+
+   header nav ul li {
+     margin-bottom: 15px; 
+     border-bottom:1px solid rgba(255,255,255, .3);
+     text-align: center;     
+   }
+ 
+
+ /*SECCION RESPONSIVE PAGINA*/
+ h1{
+   font-size: 44px;
+ }
+
+ h2{
+   font-size: 19px;
+ }
+
+ #sobre-mi .contenedor-sobremi{
+   flex-direction: column;
+ }
+/*sobremi*/
+ #sobre-mi img {
+   width: 100%;
+ }
+
+ #sobre-mi .texto{
+   width: 100%;
+  }
+/*servicios*/
+.contenedor-servicios{
+  flex-direction: column;
+}
+
+.servicio{
+  width: 82%;
+  padding: 34px 30px 69px 30px;
+}
+
+.icono{
+  margin-top: 23px;
+}
+/*mistrabajos*/
+
+h3{
+  font-size: 43px;
+}
+
+/*porquetrabajar*/
+.contenedor-trabajar{
+  flex-direction: column;  
+}
+
+#por-que-trabajar .item{
+  width: 100%;
+}
+
+.item ul{
+  padding: 0;
+}
+
+/*blog*/
+#blog .contenedor-publicaciones{
+  flex-direction: column;
+}
+
+#blog .publicacion{
+  width: 100%;
+  margin-bottom: 40px;
+}
+
+/*contactos*/
+input[type="text"],input[type="email"]{
+  width: 100%;
+}
+
+/*footer*/
+footer img {
+  margin: 0 24px;
+ }
+}
+
+/*responsivo para tablets*/
+@media (min-width: 600px) and (max-width: 800px){
+  header{
+    height: 70vh;
+  }
+
+  .servicio{
+    width: 57%;
+    padding: 34px 30px 69px 30px;
+    margin: auto;
+    margin-bottom: 45px;
+  }
+
+  #blog .publicacion{
+    width: 71%;
+    margin: auto;
+    margin-bottom:40px;
+  }
+}
+
+/*@font-face {
+  font-family: aerokids;
+  src: url('../fonts/Aerokids.otf');
+}*/
+
+
+/*Boton para subir la pagina rapido*/
+.up{
+  width:30px;
+  height:30px;
+  background-color:#17a2b8;
+  border: 1px solid;  
+  padding:0 0 0 0;
+  -webkit-border-radius: 50px;
+  -moz-border-radius: 50px;
+  border-radius: 5px;   
+}
+.up:hover{
+  opacity: 0.50;
+  -moz-opacity: .50;
+  filter:alpha (opacity=50);
+}
+.up button{
+  color:#fff;
+  text-decoration:none;
+  padding:5px 5px 5px 0;
+}
