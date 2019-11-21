@@ -20,7 +20,7 @@
 
 </head>
 <body>
-<button type="button" class="up" style="position: fixed; bottom:20px; right:20px; display:none;"><i class="fa fa-arrow-up" style="color: #fff;"></i></button> 
+<button type="button" class="up" style="position: fixed; bottom:20px; right:20px; display:none;">↑</button> 
 <a id="whatsapp" href="https://api.whatsapp.com/send?phone=528180184512" target="_blank"><img src="img/whatsapp.png" alt="whatsapp" class="imgwha"></a>
     <header>
         <div class="menu">
@@ -231,12 +231,12 @@
                 </section>
                 
                 <section id="contacto">
-                  <?php
+                  <!--<?php
                       if(@$_GET['i']=='ok') { // QUIERE DECIR QUE EL FORMULARIO SE ENVIO CORRECTAMENTE ?>
                       <h3>El mensaje se envio correctamente. Nos contactaremos a la brevedad.</h3>                
                       <?php
                       } else{
-                      ?>
+                      ?>-->
                   <div class="contenedor wow fadeIn">
                     <h3>Contacto</h3>
                     <form action="envio-formulario.php" method="post" enctype="multipart/form-data">
@@ -245,7 +245,7 @@
                       <textarea placeholder="Mensaje" name="mensaje" required></textarea>
                       <input type="submit" value="Enviar Mensaje" class="hvr-bounce-out">
                     </form>
-                    <?php } ?>  
+                   <!--<?php } ?>--> 
 
                     <div class="contacto-info">
                     <div class="mail"><img src="img/mail-icon.png" alt="">reybec.info@gmail.com</div>
